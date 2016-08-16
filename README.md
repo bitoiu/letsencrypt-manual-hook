@@ -21,7 +21,23 @@ Download the files for installation
 ```
 
 ## Usage
+
+### Single domain certificate
+
 ``` bash
+$ 
+```
+
+
+### Certificates with alias
+
+``` bash
+# The command below uses these flags
+# --cron (-c)                      Sign/renew non-existant/changed/expiring certificates.
+# --challenge (-t) http-01|dns-01  Which challenge should be used? Currently http-01 and dns-01 are supported
+# --domain (-d) domain.tld         Use specified domain name(s) instead of domains.txt entry (one certificate!)
+# --hook (-k) path/to/hook.sh      Use specified script for hooks
+
 letsencrypt-jbjonesjr.sh$ ./letsencrypt.sh -c -t dns-01 -d jbjonesjr.com -d blog.jbjonesjr.com -k ./hooks/manual/manual_hook.rb
 # INFO: Using main config file /Users/jbjonesjr/lets-encrypt/letsencrypt-jbjonesjr.sh/config.sh
 Processing jbjonesjr.com with alternative names: blog.jbjonesjr.com
