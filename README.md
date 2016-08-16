@@ -18,6 +18,7 @@ Download the files for installation
 ``` sh
   $ git clone https://github.com/lukas2511/letsencrypt.sh.git
   $ git clone https://github.com/jbjonesjr/letsencrypt-manual-hook.git letsencrypt.sh/hooks/manual
+  $ cd letsencrypt.sh && chmod +x hooks/manual
 ```
 
 ## Usage
@@ -44,11 +45,10 @@ Challenge complete. Please delete this TXT record now (or in bulk later). Press 
  + Done!
  + Creating fullchain.pem...
  + Done!
-
 ```
 
 
-### Certificates with alias
+### Certificate with alias
 
 ``` bash
 # The command below uses these flags
